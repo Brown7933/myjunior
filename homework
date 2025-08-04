@@ -1,0 +1,18 @@
+        static void Main(string[] args)
+        {
+            string name = "";
+            int age ;
+            string workrplace = "";
+
+            Console.WriteLine("Как тебя зовут?");
+            name = Console.ReadLine();
+
+            Console.WriteLine("Сколько тебе лет?");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Твое место работы?");
+            workrplace = Console.ReadLine();
+
+            Console.WriteLine("тебя зовут " + name + ", тебе " +age+ " лет, " + "твое место работы: " + workrplace);
+            
+        }
