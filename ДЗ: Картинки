@@ -1,8 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
         static void Main(string[] args)
         {
-            int count = 52;
+            int count_img = 52;
             int count_inRow = 3;
-            int Rows = count/count_inRow;
-            int ost = count%count_inRow;
+            int Rows = count_img / count_inRow;
+            int ost = count_img % count_inRow;
             Console.WriteLine("Количество рядов = "+ Rows + " остаток = " +ost);
         }
+    }
+}
