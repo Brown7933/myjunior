@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = "Durov";
+            string surname = "Pavel";
+            string temp_name = "";
+            Console.WriteLine($"Значения до перестановки:\nимя: { name}, фамилия: {surname}");
+            temp_name = name;
+            name = surname;
+            surname = temp_name;
+            Console.WriteLine($"Значения после перестановки:\nимя: {name}, фамилия: {surname}");
+        }
+    }
+}
