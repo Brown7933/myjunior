@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите количество золота в вашем кошельке?");
+            int gold = Convert.ToInt32(Console.ReadLine());
+            int count_crys = 25;
+            int price_crys = 120;
+            Console.WriteLine($"В вашем кошельке {gold} золота\nВ магазине есть {count_crys} кристаллов\nЦена кристалла {price_crys} золотых");
+            Console.WriteLine("Сколько кристаллов вы хотите купить?");
+            int buying_crys = Convert.ToInt32(Console.ReadLine());
+            count_crys -= buying_crys;
+            gold -= buying_crys * price_crys;
+            Console.WriteLine($"Вы купили {buying_crys} кристаллов\nВ магазине осталось {count_crys} кристаллов\nВ вашем кошельке теперь {gold} золота");
+        }
+    }
+}
